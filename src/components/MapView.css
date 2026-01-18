@@ -1,0 +1,198 @@
+.map-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.leaflet-map {
+  height: 100%;
+  width: 100%;
+  background: #1a1a1a;
+}
+
+/* Coordinate Display Overlay */
+.coord-display {
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+  z-index: 1000;
+  background: rgba(3, 25, 38, 0.9);
+  color: #F4F1DE;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-family: 'Courier Prime', monospace;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  border: 1px solid #548687;
+}
+
+.mouse-position {
+  position: absolute;
+  bottom: 85px;
+  left: 10px;
+  z-index: 1000;
+  background: rgba(84, 134, 135, 0.9);
+  color: #F4F1DE;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-family: 'Courier Prime', monospace;
+  font-size: 0.75rem;
+}
+
+.scale-info {
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
+  z-index: 1000;
+  background: rgba(3, 25, 38, 0.9);
+  color: #F4F1DE;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-family: 'Courier Prime', monospace;
+  font-size: 0.75rem;
+  border: 1px solid #548687;
+}
+
+/* Map Info Panel */
+.map-info-panel {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  background: rgba(3, 25, 38, 0.95);
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #548687;
+}
+
+.info-item {
+  display: flex;
+  gap: 10px;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+
+.info-item:last-child {
+  margin-bottom: 0;
+}
+
+.info-label {
+  color: #548687;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.info-value {
+  color: #F4F1DE;
+  font-family: 'Courier Prime', monospace;
+}
+
+/* Marker Popup Styling */
+.marker-popup {
+  font-family: 'Nunito', sans-serif;
+}
+
+.marker-popup strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #473335;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.marker-popup p {
+  margin: 3px 0;
+  font-family: 'Courier Prime', monospace;
+  font-size: 0.85rem;
+  color: #333;
+}
+
+/* Leaflet Control Styling */
+.leaflet-control-layers {
+  background: rgba(3, 25, 38, 0.95) !important;
+  border: 1px solid #548687 !important;
+  border-radius: 5px !important;
+  color: #F4F1DE !important;
+}
+
+.leaflet-control-layers-expanded {
+  padding: 10px 15px !important;
+}
+
+.leaflet-control-layers-toggle {
+  background-color: #031926 !important;
+  border: 1px solid #548687 !important;
+}
+
+.leaflet-control-layers-selector {
+  margin-right: 8px;
+}
+
+.leaflet-control-layers-base label,
+.leaflet-control-layers-overlays label {
+  color: #F4F1DE;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.85rem;
+}
+
+.leaflet-control-layers-separator {
+  border-top: 1px solid #548687;
+  margin: 8px 0;
+}
+
+/* Zoom Control */
+.leaflet-control-zoom {
+  border: 1px solid #548687 !important;
+  border-radius: 5px !important;
+  overflow: hidden;
+}
+
+.leaflet-control-zoom a {
+  background: #031926 !important;
+  color: #F4F1DE !important;
+  border-bottom: 1px solid #548687 !important;
+}
+
+.leaflet-control-zoom a:last-child {
+  border-bottom: none !important;
+}
+
+.leaflet-control-zoom a:hover {
+  background: #548687 !important;
+}
+
+/* Attribution */
+.leaflet-control-attribution {
+  background: rgba(3, 25, 38, 0.8) !important;
+  color: #F4F1DE !important;
+  font-size: 0.7rem;
+}
+
+.leaflet-control-attribution a {
+  color: #548687 !important;
+}
+
+/* Popup styling */
+.leaflet-popup-content-wrapper {
+  border-radius: 8px;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.4);
+}
+
+.leaflet-popup-tip {
+  background: white;
+}
+
+/* Scale Control */
+.leaflet-control-scale-line {
+  background: rgba(3, 25, 38, 0.9) !important;
+  color: #F4F1DE !important;
+  border: 1px solid #548687 !important;
+  border-top: none !important;
+  font-family: 'Courier Prime', monospace;
+  font-size: 0.7rem;
+}
+
+/* Loading Indicator */
+.leaflet-tile-loaded {
+  transition: opacity 0.3s ease;
+}
