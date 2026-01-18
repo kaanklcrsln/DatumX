@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "description": "Professional coordinate transformation system for geomatics engineers and GIS professionals",
-  "homepage": "https://yourusername.github.io/DatumX",
+  "homepage": "https://kaanklcrsln.github.io/DatumX",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
