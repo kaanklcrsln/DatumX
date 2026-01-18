@@ -1,16 +1,56 @@
-# React + Vite
+# DatumX
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Professional coordinate transformation system for geomatics engineers and GIS professionals.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Coordinate Systems**: Geographic (GCS), Geocentric (ECEF), Projected (PCS)
+- **Datum Transformations**: WGS84, ED50, TUREF, ITRF, NAD27/83, and more
+- **Projections**: UTM zones, Turkish TM projections, Web Mercator
+- **Interactive Map**: Leaflet integration with satellite/OSM basemaps
+- **Educational Mode**: Comprehensive geodetic theory and formulas
+- **Batch Processing**: Transform multiple coordinates at once
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend**: React 19.2.0 + Vite 7.x
+- **Mapping**: Leaflet + react-leaflet
+- **Transformations**: Proj4js + custom Helmert implementations
+- **Styling**: Custom CSS with responsive design
+- **Deployment**: GitHub Pages ready
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# Clone repository
+git clone https://github.com/kaanklcrsln/DatumX.git
+cd DatumX
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Deploy to GitHub Pages
+npm run deploy
+```
+
+## Usage
+
+1. Select source and target coordinate systems
+2. Enter coordinates in the input panel
+3. View results instantly with map visualization
+4. Access educational content for geodetic concepts
+5. Export results or use batch mode for multiple points
+
+## Supported Systems
+
+- **Datums**: WGS84, ITRF2014/2020, ETRS89, TUREF, ED50, NAD27/83, OSGB36, Tokyo
+- **Projections**: UTM (zones 1-60), Turkish TM (30°-45°), Web Mercator, LCC
+- **Heights**: Ellipsoidal, orthometric, geoid undulations
+
+Built with precision for professional surveying and GIS applications.
