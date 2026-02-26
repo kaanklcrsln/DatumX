@@ -9,7 +9,7 @@ Coordinate transformation system for geomatics engineers and GIS professionals.
 
 ## Features
 
-- **Coordinate Systems**: Geographic (GCS), Geocentric (ECEF), Projected (PCS)
+- **Coordinate Systems**: Geographic, Geocentric (ECEF), Projected (PCS)
 - **Datum Transformations**: WGS84, ED50, TUREF, ITRF, NAD27/83, and more
 - **Projections**: UTM zones, Turkish TM projections, Web Mercator
 - **Interactive Map**: Leaflet integration with satellite/OSM basemaps
